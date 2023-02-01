@@ -1,0 +1,66 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+
+#popup {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(35, 148, 35);
+    color: antiquewhite;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    /* animation: slide 2s; */
+}
+
+@keyframes slide {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes unslide {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -100px;
+    }
+}
+
+.container {
+    display: flex;
+    margin: 50vh;
+    padding: 5vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 1px rgba(55, 12, 62, 0.114);
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container button {
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
